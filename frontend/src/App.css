@@ -295,3 +295,90 @@ dd {
     gap: 2px;
   }
 }
+
+.mode-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 22px;
+  padding: 5px;
+  background: #e4e8ee;
+  border-radius: 9px;
+}
+
+.mode-button {
+  border: 0;
+  border-radius: 6px;
+  padding: 11px 14px;
+  background: transparent;
+  color: #465568;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mode-button.active {
+  background: white;
+  color: #173b63;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.selected-files {
+  margin-top: 16px;
+  color: #4f5d6e;
+  font-size: 14px;
+}
+
+.selected-files ul {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+
+.batch-results {
+  display: grid;
+  gap: 14px;
+}
+
+.batch-card {
+  background: white;
+  border: 1px solid #d9dfe7;
+  border-radius: 9px;
+  padding: 20px;
+}
+
+.batch-card h3 {
+  margin: 0;
+}
+
+.batch-card details {
+  margin-top: 12px;
+}
+
+.batch-card summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.batch-check-details {
+  margin-top: 18px;
+}
+
+.performance-note {
+  margin: 14px 0 18px;
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.performance-pass {
+  background: #edf7f0;
+  border: 1px solid #b9d9c2;
+  color: #275f38;
+}
+
+.performance-review {
+  background: #fff6e5;
+  border: 1px solid #e7cf98;
+  color: #735817;
+}
