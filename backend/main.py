@@ -1,3 +1,4 @@
+from pathlib import Path
 from io import BytesIO, StringIO
 import csv
 import re
@@ -6,6 +7,7 @@ import time
 import pytesseract
 from PIL import Image, ImageOps, UnidentifiedImageError
 from rapidfuzz import fuzz
+from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -600,3 +602,14 @@ async def verify_batch(
         "batch_size": len(rows),
         "results": results
     }
+
+# Serve the production React build when it is available.
+frontend_dist = Path(__file__).resolve().parent.parent / "frontend" / "dist"
+
+if frontend_dist.exists():
+    app.mount(
+        "/",
+        StaticFiles(directory=str(frontend_dist), html=True),
+        name="frontend",
+    )
+
