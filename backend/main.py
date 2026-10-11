@@ -29,14 +29,6 @@ app.add_middleware(
 )
 
 
-@app.get("/")
-def root():
-    return {
-        "status": "ok",
-        "message": "TTB Label Verification API is running"
-    }
-
-
 @app.get("/health")
 def health():
     return {"status": "healthy"}
