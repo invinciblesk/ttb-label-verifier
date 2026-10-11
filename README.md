@@ -10,7 +10,7 @@ The application does **not** automatically approve or reject alcohol labels. Fin
 
 ## Deployed Application
 
-**Application URL:** To be added after deployment.
+**Application URL:** https://ttb-label-verifier-rtrd.onrender.com/
 
 ---
 
@@ -1046,10 +1046,10 @@ It is not intended to represent a complete regulatory compliance engine.
 
 The assessment requires a publicly accessible application.
 
-The deployment URL will be added here after deployment is completed:
+The deployed application is available at:
 
 ```text
-TBD
+https://ttb-label-verifier-rtrd.onrender.com/
 ```
 
 ---
